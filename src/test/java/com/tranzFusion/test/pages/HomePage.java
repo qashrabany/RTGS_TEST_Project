@@ -28,8 +28,18 @@ public class HomePage extends BasePage{
 
         }
     }
+    public  ClientToClient clicktoClientbtn() {
+
+        getWebElement(By.id("MenuTransactions")).click();
+        try {
+            Thread.sleep(3000);
+            getWebElement(By.id("HyperLinkTransC2CI")).click();
+            return getInstance(ClientToClient.class);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+
+        }
 
 
-
-
-}
+    }
+    }
