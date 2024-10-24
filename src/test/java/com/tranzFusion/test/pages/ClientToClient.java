@@ -11,6 +11,9 @@ public class ClientToClient extends BasePage {
     }
 
     public ClientToClient selectMirrorAccount(int index) {
+        Actions actions = new Actions(driver);
+        actions.moveToElement(getWebElement(By.id("contPlcHdrMasterHolder_FHddlAccountDebtor"))).perform();
+        waitForElement((By.id("contPlcHdrMasterHolder_FHddlAccountDebtor")));
         new Select(getWebElement(By.cssSelector("#contPlcHdrMasterHolder_FHddlAccountDebtor"))).selectByIndex(index);
         return this;
 
@@ -33,7 +36,10 @@ public class ClientToClient extends BasePage {
     }
 
     public ClientToClient selectCustomerOffice(int index) {
-        new Select(getWebElement(By.id("contPlcHdrMasterHolder_FHddlBranchID"))).selectByIndex(index);
+        Actions actions = new Actions(driver);
+        actions.moveToElement(getWebElement(By.id("contPlcHdrMasterHolder_FHddlBranchCreditor"))).perform();
+        waitForElement((By.id("contPlcHdrMasterHolder_FHddlBranchCreditor")));
+        new Select(getWebElement(By.id("contPlcHdrMasterHolder_FHddlBranchCreditor"))).selectByIndex(index);
         return this;
     }
 

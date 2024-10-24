@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf6259f4-8f1d-48ab-beb2-dda7309603e2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+    <list default="true" id="cf6259f4-8f1d-48ab-beb2-dda7309603e2" name="Changes" comment="ClientToClient and ClientToClientTest">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tranzFusion/test/pages/ClientToClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tranzFusion/test/pages/ClientToClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,8 +58,25 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MDRafiulHoqueFakir&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/qashrabany/RTGS_TEST_Project&quot;,
+    &quot;accountId&quot;: &quot;bd0e3098-413f-49e6-a1a0-944bdb91531d&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -78,22 +88,27 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Gradle.ClientToClientTest.ClientToClientTransactionShouldSucceed.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ClientToClientTest.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.FinToFinTest.FinToFinTransactionShouldBeSucceed.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.FinToFinTest.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.LoginTest.doLoginShouldSucceed.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.LoginTest.doLoginWithPasswordShouldFail.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.LoginTest.doLoginWithUserIdShouldFail.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.LoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RTGS [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RTGS [clean].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.RTGS_TEST_Project [build].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.RTGS_TEST_Project [clean].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;RTGS__Rafiul&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/shrabany.roy/IdeaProjects/RTGS_TEST_Project&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/shrabany.roy/IdeaProjects/RTGS_TEST_Project/src/main/java/org/example/Main.java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -101,8 +116,8 @@
       <recent name="C:\Users\shrabany.roy\IdeaProjects\RTGS_TEST_Project\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.FinToFinTest.FinToFinTransactionShouldBeSucceed">
-    <configuration name="FinToFinTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.ClientToClientTest">
+    <configuration name="ClientToClientTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -115,7 +130,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.tranzFusion.test.testcases.FinToFinTest&quot;" />
+            <option value="&quot;com.tranzFusion.test.testcases.ClientToClientTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ClientToClientTest.ClientToClientTransactionShouldSucceed" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.tranzFusion.test.testcases.ClientToClientTest.ClientToClientTransactionShouldSucceed&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -150,55 +189,29 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RTGS [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.tranzFusion.test.testcases.LoginTest&quot;" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTest.doLoginShouldSucceed" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.tranzFusion.test.testcases.LoginTest.doLoginShouldSucceed&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="RTGS_TEST_Project [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RTGS [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -222,11 +235,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ClientToClientTest" />
+        <item itemvalue="Gradle.ClientToClientTest.ClientToClientTransactionShouldSucceed" />
+        <item itemvalue="Gradle.RTGS [clean]" />
+        <item itemvalue="Gradle.RTGS [build]" />
         <item itemvalue="Gradle.FinToFinTest.FinToFinTransactionShouldBeSucceed" />
-        <item itemvalue="Gradle.FinToFinTest" />
-        <item itemvalue="Gradle.LoginTest.doLoginShouldSucceed" />
-        <item itemvalue="Gradle.LoginTest" />
-        <item itemvalue="Gradle.RTGS_TEST_Project [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +252,20 @@
       <option name="presentableId" value="Default" />
       <updated>1728214851013</updated>
     </task>
+    <task id="LOCAL-00001" summary="ClientToClient and ClientToClientTest">
+      <option name="closed" value="true" />
+      <created>1729666668805</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729666668805</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ClientToClient and ClientToClientTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="ClientToClient and ClientToClientTest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
