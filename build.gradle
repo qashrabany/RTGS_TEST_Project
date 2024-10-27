@@ -12,7 +12,8 @@ repositories {
 dependencies {
 
     // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
-    testImplementation 'org.seleniumhq.selenium:selenium-java:4.25.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.25.0'
+
     // https://mvnrepository.com/artifact/org.testng/testng
     testImplementation 'org.testng:testng:7.10.2'
 
